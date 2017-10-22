@@ -1,0 +1,18 @@
+{
+  "name": "mom_styleguide",
+  "version": "1.0.0",
+  "description": "A styleguide for mom-ca",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Gerlinde",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "livingcss": "^4.3.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-livingcss": "^2.1.0"
+  }
+}

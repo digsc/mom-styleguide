@@ -1,0 +1,172 @@
+/**
+ * @section Style
+ *
+ */
+
+/**
+ *
+ * @section Colors
+ * @sectionof Style
+ * @example
+ * <div style="width: 60px; height: 60px" class="mom-theme-primary"></div>
+ * <div style="width: 60px; height: 60px" class="mom-theme-secondary"></div>
+ * <div style="width: 60px; height: 60px" class="mom-theme-text-primary-on-primary"></div>
+ * @hideCode
+ */
+
+:root {
+    --mdc-theme-primary: rgb(239, 243, 225);
+    --mdc-theme-secondary: orange;
+    --mdc-theme-text-primary-on-primary: rgb(71, 88, 98);
+}
+
+.mom-theme-primary {
+    background-color: var(--mdc-theme-primary);
+}
+
+.mom-theme-text-primary-on-primary {
+    background-color: var(--mdc-theme-text-primary-on-primary);
+}
+
+.mom-theme-secondary {
+    background-color: var(--mdc-theme-secondary);
+}
+
+/**
+ * @section Icons
+ * @sectionof Style
+ *
+ */
+
+
+/**
+ *
+ * @section Typography
+ * @sectionof Style
+ * 
+ */
+
+/**
+ *
+ * @section Layout
+ *
+ */
+
+/**
+ * 
+ * The header varies from home/landingpage to the other pages. On the homepage it is a two row sticky thing,
+ * changing when moving.
+ * In the other cases one row, mom-Logo on the left hand.
+ * 
+ * @section Header
+ * @sectionof Layout
+ * 
+ * @example
+ * <header class="mdc-toolbar mdc-toolbar--fixed mdc-toolbar--fixed-lastrow-only" style="position: relative;">
+ *           <div class="mdc-toolbar__row">
+ *               <section class="mdc-toolbar__section mdc-toolbar__section--align-center">
+ *                   <img src="images/momlogo_small.png" />
+ *               </section>
+ *               
+ *           </div>
+ *           <div class="mdc-toolbar__row">
+ *               <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+ *                   <nav class="mdl-navigation mom-navigation-main">
+ *                       <a class="mdc-toolbar__link" href="index.html">Home</a>
+ *                       <a class="mdc-toolbar__link" href="fonds.html">Fonds</a>
+ *                       <a class="mdc-toolbar__link" href="collections.html">Collections</a>
+ *                       <a class="mdc-toolbar__link" href="my_archive.html">MyArchive</a>
+ *                       <a class="mdc-toolbar__link" href="help.html">Help</a>
+ *                   </nav>
+ *               </section>
+ *               <span class="material-icons mdc-toolbar__icon--search">search</span>
+ *               <div class="mdc-textfield">
+ *                   <input type="text" id="my-textfield" class="mdc-textfield__input"/>
+ *                       <label class="mdc-textfield__label" for="my-textfield">Search mom</label>
+ *               </div>
+ *           </div>
+ *       </header>
+ * 
+ * @code
+ * <header class="mdc-toolbar mdc-toolbar--fixed mdc-toolbar--fixed-lastrow-only">
+ *           <div class="mdc-toolbar__row">
+ *               <section class="mdc-toolbar__section mdc-toolbar__section--align-center">
+ *                   <img src="images/momlogo_small.png" />
+ *               </section>
+ *               
+ *           </div>
+ *           <div class="mdc-toolbar__row">
+ *               <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+ *                   <nav class="mdl-navigation mom-navigation-main">
+ *                       <a class="mdc-toolbar__link" href="index.html">Home</a>
+ *                       <a class="mdc-toolbar__link" href="fonds.html">Fonds</a>
+ *                       <a class="mdc-toolbar__link" href="collections.html">Collections</a>
+ *                       <a class="mdc-toolbar__link" href="my_archive.html">MyArchive</a>
+ *                       <a class="mdc-toolbar__link" href="help.html">Help</a>
+ *                   </nav>
+ *               </section>
+ *               <span class="material-icons mdc-toolbar__icon--search">search</span>
+ *               <div class="mdc-textfield">
+ *                   <input type="text" id="my-textfield" class="mdc-textfield__input"/>
+ *                       <label class="mdc-textfield__label" for="my-textfield">Search mom</label>
+ *               </div>
+ *           </div>
+ *       </header>
+ * 
+ */
+ 
+ .mdc-toolbar__row {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 8px;
+}
+
+.mdc-toolbar__title {
+    background: rgba(0, 0, 0, 0) url("../images/momlogo_small.png") no-repeat scroll 0 center;
+}
+
+/**
+ *
+ * @section Components
+ *
+ */
+
+/**
+ * Breadcrumbs appear on different pages to indicate the user's location  * within a certain collection or fond
+ *
+ * @section Breadcrumbs
+ * @sectionof Components
+ *
+ */
+
+/**
+ * The functions toolbar appears on charter and collection (at least) 
+ * and is disabled when the user is not logged in (not sure if this is 
+ * necessary at all). However, it provides access to different functions
+ * on different pages... 
+ * 
+ * @section Functions toolbar
+ * @sectionof Components
+ *
+ */
+
+/**
+ * 
+ * Charter cards give a compact overview of one charter's metadata 
+ * and regest. Used to provide search results and on collection pages. 
+ * Also in my Archive aka saved-charters
+ * When logged-in, there is also a toolbar wich facilitates bookmarking
+ * and editing but looks different to the funtions toolbar... oh oh   
+ *
+ * @section Charter card
+ * @sectionof Components
+ *
+ */
+
+/**
+ * Used to flip through search results.
+ *
+ * @section Pagination
+ * @sectionof Components
+ * 
+ */
